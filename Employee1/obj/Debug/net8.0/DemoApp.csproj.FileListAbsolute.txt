@@ -1,0 +1,4 @@
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/Employee1/obj/Debug/net8.0/DemoApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/Employee1/obj/Debug/net8.0/DemoApp.AssemblyInfoInputs.cache
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/Employee1/obj/Debug/net8.0/DemoApp.AssemblyInfo.cs
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/Employee1/obj/Debug/net8.0/DemoApp.csproj.CoreCompileInputs.cache
