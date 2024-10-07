@@ -1,0 +1,14 @@
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/bin/Debug/net8.0/Patient
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/bin/Debug/net8.0/Patient.deps.json
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/bin/Debug/net8.0/Patient.runtimeconfig.json
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/bin/Debug/net8.0/Patient.dll
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/bin/Debug/net8.0/Patient.pdb
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/obj/Debug/net8.0/Patient.GeneratedMSBuildEditorConfig.editorconfig
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/obj/Debug/net8.0/Patient.AssemblyInfoInputs.cache
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/obj/Debug/net8.0/Patient.AssemblyInfo.cs
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/obj/Debug/net8.0/Patient.csproj.CoreCompileInputs.cache
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/obj/Debug/net8.0/Patient.dll
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/obj/Debug/net8.0/refint/Patient.dll
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/obj/Debug/net8.0/Patient.pdb
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/obj/Debug/net8.0/Patient.genruntimeconfig.cache
+/home/cdac1234/chetan_kaushal/DotNet/Inheritance/PateintAssignment/obj/Debug/net8.0/ref/Patient.dll
