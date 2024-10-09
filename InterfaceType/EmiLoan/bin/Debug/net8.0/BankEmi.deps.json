@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BankEmi/1.0.0": {
+        "dependencies": {
+          "EmiCalc": "1.0.0"
+        },
+        "runtime": {
+          "BankEmi.dll": {}
+        }
+      },
+      "EmiCalc/1.0.0": {
+        "runtime": {
+          "EmiCalc.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BankEmi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EmiCalc/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kaushal/DotNet/InterfaceType/EmiLoan/BankEmi.csproj": {}
+  },
+  "projects": {
+    "/home/kaushal/DotNet/InterfaceType/EmiLib/EmiCalc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kaushal/DotNet/InterfaceType/EmiLib/EmiCalc.csproj",
+        "projectName": "EmiCalc",
+        "projectPath": "/home/kaushal/DotNet/InterfaceType/EmiLib/EmiCalc.csproj",
+        "packagesPath": "/home/kaushal/.nuget/packages/",
+        "outputPath": "/home/kaushal/DotNet/InterfaceType/EmiLib/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kaushal/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kaushal/DotNet/InterfaceType/EmiLoan/BankEmi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kaushal/DotNet/InterfaceType/EmiLoan/BankEmi.csproj",
+        "projectName": "BankEmi",
+        "projectPath": "/home/kaushal/DotNet/InterfaceType/EmiLoan/BankEmi.csproj",
+        "packagesPath": "/home/kaushal/.nuget/packages/",
+        "outputPath": "/home/kaushal/DotNet/InterfaceType/EmiLoan/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kaushal/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/kaushal/DotNet/InterfaceType/EmiLib/EmiCalc.csproj": {
+                "projectPath": "/home/kaushal/DotNet/InterfaceType/EmiLib/EmiCalc.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
