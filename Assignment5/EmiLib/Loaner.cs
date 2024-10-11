@@ -18,11 +18,33 @@ public static class Loaner{
 
     public static double GetEmI(Loan l){
         if(l is PersonalLoan){
-            return l.principle*(1+l.GetRate()*l.period/100)/(12*l.period);
+            double  d = l.principle*(1+l.GetRate()*l.period/100)/(12*l.period);
+            return d;
         }else if(l is HomeLoan){
-            return l.principle*(1+l.GetRate()*l.period/100)/(12*l.period);
+            double d = l.principle*(1+l.GetRate()*l.period/100)/(12*l.period);
+            return d;
         }else{
-            throw new ArgumentException("Illegal Argument");
+            throw new ApplicationException();
         }
     }
+
+    public static double GetDiscountedEmi(Loan hl){
+        if(hl is HomeLoan){
+            IDisscountable h = hl as IDisscountable;
+
+            double d = h.GetDiscount(); 
+            return GetEmI(hl)-(GetEmI(hl)* d);
+        }
+        return 0;
+    }
+
+    public static double GetTaxedEmi(Loan hl){
+        if(hl is PersonalLoan){
+            ITaxable h = hl as ITaxable;
+
+            double d = h.GetTax(); 
+            return GetEmI(hl)+(GetEmI(hl)* d);
+        }
+        return 0;
+    }   
 }
