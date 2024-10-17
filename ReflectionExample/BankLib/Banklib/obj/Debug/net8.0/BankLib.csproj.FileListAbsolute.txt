@@ -1,0 +1,11 @@
+/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/Banklib/bin/Debug/net8.0/BankLib.deps.json
+/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/Banklib/bin/Debug/net8.0/BankLib.dll
+/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/Banklib/bin/Debug/net8.0/BankLib.pdb
+/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/Banklib/obj/Debug/net8.0/BankLib.GeneratedMSBuildEditorConfig.editorconfig
+/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/Banklib/obj/Debug/net8.0/BankLib.AssemblyInfoInputs.cache
+/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/Banklib/obj/Debug/net8.0/BankLib.AssemblyInfo.cs
+/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/Banklib/obj/Debug/net8.0/BankLib.csproj.CoreCompileInputs.cache
+/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/Banklib/obj/Debug/net8.0/BankLib.dll
+/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/Banklib/obj/Debug/net8.0/refint/BankLib.dll
+/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/Banklib/obj/Debug/net8.0/BankLib.pdb
+/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/Banklib/obj/Debug/net8.0/ref/BankLib.dll

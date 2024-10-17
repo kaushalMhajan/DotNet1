@@ -1,0 +1,94 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "BankLib/2.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BankLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BankLib/2.0.0": {
+      "type": "project",
+      "path": "../Banklib/BankLib.csproj",
+      "msbuildProject": "../Banklib/BankLib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "BankLib >= 2.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/cdac1234/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/DemoApp2/DemoApp.csproj",
+      "projectName": "DemoApp",
+      "projectPath": "/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/DemoApp2/DemoApp.csproj",
+      "packagesPath": "/home/cdac1234/.nuget/packages/",
+      "outputPath": "/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/DemoApp2/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/cdac1234/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/Banklib/BankLib.csproj": {
+              "projectPath": "/home/cdac1234/chetan_kaushal/DotNet/ReflectionExample/BankLib/Banklib/BankLib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/home/cdac1234/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
