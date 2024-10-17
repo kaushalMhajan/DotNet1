@@ -6,7 +6,7 @@ public class EconomyTours
         double rate = 500*days*noPersons;
 
         if(days > 6 || noPersons >=4){
-            return rate-(days*1200);
+            return rate-(days*500);
         }
 
         return rate;
