@@ -1,0 +1,11 @@
+/home/cdac1234/chetan_kaushal/DotNet/Assignment6/MetTours/bin/Debug/net8.0/MetTours.deps.json
+/home/cdac1234/chetan_kaushal/DotNet/Assignment6/MetTours/bin/Debug/net8.0/MetTours.dll
+/home/cdac1234/chetan_kaushal/DotNet/Assignment6/MetTours/bin/Debug/net8.0/MetTours.pdb
+/home/cdac1234/chetan_kaushal/DotNet/Assignment6/MetTours/obj/Debug/net8.0/MetTours.GeneratedMSBuildEditorConfig.editorconfig
+/home/cdac1234/chetan_kaushal/DotNet/Assignment6/MetTours/obj/Debug/net8.0/MetTours.AssemblyInfoInputs.cache
+/home/cdac1234/chetan_kaushal/DotNet/Assignment6/MetTours/obj/Debug/net8.0/MetTours.AssemblyInfo.cs
+/home/cdac1234/chetan_kaushal/DotNet/Assignment6/MetTours/obj/Debug/net8.0/MetTours.csproj.CoreCompileInputs.cache
+/home/cdac1234/chetan_kaushal/DotNet/Assignment6/MetTours/obj/Debug/net8.0/MetTours.dll
+/home/cdac1234/chetan_kaushal/DotNet/Assignment6/MetTours/obj/Debug/net8.0/refint/MetTours.dll
+/home/cdac1234/chetan_kaushal/DotNet/Assignment6/MetTours/obj/Debug/net8.0/MetTours.pdb
+/home/cdac1234/chetan_kaushal/DotNet/Assignment6/MetTours/obj/Debug/net8.0/ref/MetTours.dll
