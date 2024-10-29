@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <title>Employee Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body>
+    <div x-data="dataSource()" class="container pt-4 pb-4">
+        <h1>Employee Project</h1>
+        <div class="row" style="margin-top: 40px;">
+
+            <!-- Employee -->
+            <div class="col-xl-7">
+                <h2>Add Employee</h2>
+                <div x-init="readDepartments()" class="row">
+                    
+                    <form>
+                        <div class="mb-3">
+                            <label style="font-size: large;" for="empname" class="form-label">Name:</label>
+                            <input type="text" name="empname" class="form-control" id="empname" x-model="Employees.EmployeeName"
+                                aria-describedby="nameHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label style="font-size: large;" for="empsal" class="form-label">Salary:</label>
+                            <input type="text" x-model="Employees.salary" name="empsal" class="form-control" id="empsal"
+                            aria-describedby="salaryHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label style="font-size: large;" for="deptid" class="form-label">Department:</label>
+                            <select x-model="Employees.DepartmentId" name="deptid" class="form-select" id="deptid" required>
+                                <option selected disabled>Select Department</option>
+                                <template x-for="dept in departments" :key="dept.id">
+                                    <option :value="dept.id" x-text="dept.dName"></option>
+                                </template>
+                            </select>
+                        </div>
+                        <p>
+                            <button x-on:click="writeEmployees()" class="btn btn-primary">Add</button>
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Employee Table -->
+                <div x-init="readEmployees()" class="row">
+                    <h2>Employee Details</h2>
+                    <table style="font-size: larger;text-align: center;" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Salary</th>
+                                <th scope="col">Department</th>
+                            </tr>
+                        </thead>
+                        <template x-for="emp in employees">
+                            <tr scope="row">
+                                <td x-text="emp.id"></td>
+                                <td x-text="emp.name"></td>
+                                <td x-text="emp.salary"></td>
+                                <td x-text="emp.department"></td>
+                               </tr>
+                        </template>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Department -->
+            <div class="col-xl-5">
+                <h2>Add Department</h2>
+                <div class="row">
+                        <div class="mb-3">
+                            <label style="font-size: large;" class="form-label">Department : </label>
+                            <input type="text" id="DepartmentName" x-model="Department.DepartmentName" class="form-control"
+                            required>
+                        </div>
+                        <p>
+                            <button x-on:click="writeDepartments()" class="btn btn-primary">Add</button>
+                        </p>
+                </div>
+
+                <!-- Department Table -->
+                <div x-init="readDepartments()" class="row">
+                    <h2>Departments</h2>
+                    <table style="font-size: larger;text-align: center;" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Name</th>
+                            </tr>
+                        </thead>
+                        <template x-for="dept in departments">
+                            <tr scope="row">
+                                <td x-text="dept.id"></td>
+                                <td x-text="dept.dName"></td>
+                            </tr>
+                        </template>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <script>
+        
+        function dataSource() {
+            const backendUri = "/api/home";
+            return {
+                employees: [],
+                departments: [],
+                Employees: { EmployeeName: "", DepartmentId: "",salary: "" },
+                Department: { DepartmentName: "" },
+                async readEmployees() {
+                    let response = await fetch(backendUri);
+                    this.employees = await response.json();
+                },
+                async readDepartments() {
+                    let response = await fetch(`${backendUri}/dept`);
+                    this.departments = await response.json();
+                },
+                async writeDepartments() {
+                    let request = {
+                        method: "post",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(this.Department)
+                    }
+                    let response = await fetch(`${backendUri}/dept/adddept`, request)
+                    if (response.ok)
+                        await this.readDepartments();
+                },
+                async writeEmployees() {
+                    let request = {
+                        method: "post",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(this.Employees)
+                    }
+                    let response = await fetch(`${backendUri}/emp/addemp`, request)
+                    if (response.ok)
+                        return this.readEmployees();
+                }
+            }
+        }
+    </script>
+
+</body>
+
+
+
+
+
+</html>
