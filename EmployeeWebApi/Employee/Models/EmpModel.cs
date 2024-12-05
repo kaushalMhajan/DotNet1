@@ -19,6 +19,21 @@ public class EmpModel
         return selection.ToList();
     }
 
+    public IEnumerable<AllEmployee> GetAnEmployees(int id)
+    {
+        using var emp = new EmpDbContext();
+        var selection = from e in emp.Employees
+                        where e.Id == id
+                        select new AllEmployee
+                        {
+                            Id = e.Id,
+                            Name = e.EmployeeName,
+                            Salary = e.salary,
+                            Department = e.DepartmentId
+                        };
+        return selection.ToList();
+    }
+
     public IEnumerable<AllDepartment> GetAllDepartments()
     {
         using var emp = new EmpDbContext();
