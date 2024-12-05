@@ -25,6 +25,14 @@ public class HomeController : ControllerBase{
 
     }
 
+    [HttpGet("/api/home/{id}")]
+    public IActionResult ReadanEmployee(EmpModel emp,int id){
+        var employee = emp.GetAnEmployees(id);
+        if(employee.Any())
+            return Ok(employee);
+        return NotFound();
+    }
+
     [HttpGet("/api/home/dept")]
     public IActionResult ReadDepartments(EmpModel emp){
         var dept = emp.GetAllDepartments();
